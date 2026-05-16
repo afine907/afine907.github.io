@@ -4,6 +4,21 @@ import styles from './styles.module.css';
 
 const groups = [
   {
+    label: '📖 入门指南',
+    categories: [
+      {
+        label: 'AI Agent 入门',
+        description: '概念基础、LLM 原理、环境搭建、第一个 Agent',
+        items: [
+          { docId: 'getting-started/what-is-ai-agent', title: 'AI Agent 是什么？', description: '从第一性原理理解 AI Agent 的核心概念' },
+          { docId: 'getting-started/llm-basics', title: 'LLM 基础概念', description: 'Token、上下文窗口、关键参数详解' },
+          { docId: 'getting-started/dev-environment-setup', title: '开发环境搭建', description: 'Python + API Key + LangChain 完整配置' },
+          { docId: 'getting-started/your-first-agent', title: '你的第一个 Agent', description: '用 LangGraph 构建命令行搜索助手' },
+        ],
+      },
+    ],
+  },
+  {
     label: '🤖 AI / LLM',
     categories: [
       {
@@ -11,13 +26,13 @@ const groups = [
         description: '架构设计、工程实践、进阶能力',
         items: [
           { docId: 'agent-architecture/long-term-memory', title: 'AI Agent 长期记忆管理实现', description: 'Agent 长期记忆的完整实现方案' },
-          { docId: 'agent-architecture/Agent-Tool-Permission-Design', title: 'Agent 工具权限管理设计', description: 'Agent 工具权限管理设计' },
+          { docId: 'agent-architecture/tool-permission-design', title: 'Agent 工具权限管理设计', description: 'Agent 工具权限管理设计' },
           { docId: 'agent-architecture/jojo-code-architecture', title: 'jojo-code 核心架构解析', description: 'jojo-code 核心架构源码级解析' },
           { docId: 'agent-architecture/multi-agent-collaboration', title: 'Agent 多 Agent 协作指南', description: '多 Agent 协作架构与实现' },
           { docId: 'agent-architecture/memory-system', title: 'Agent 记忆系统设计', description: 'Agent 记忆系统完整设计' },
           { docId: 'agent-engineering/langgraph-orchestration', title: 'LangGraph Agent 编排实战', description: 'LangGraph Agent 编排实战指南' },
           { docId: 'agent-engineering/state-management', title: 'Agent 状态管理设计', description: 'Agent 状态管理的完整方案' },
-          { docId: 'agent-engineering/llm-context-window-management', title: 'LLM 上下文窗口管理策略', description: 'LLM 上下文窗口管理策略' },
+          { docId: 'agent-engineering/context-window-management', title: 'LLM 上下文窗口管理策略', description: 'LLM 上下文窗口管理策略' },
           { docId: 'agent-engineering/mcp-guide', title: 'Agent MCP 实战指南', description: 'Model Context Protocol 实战' },
           { docId: 'agent-engineering/prompt-design', title: 'Agent Prompt 设计指南', description: 'Agent Prompt 工程最佳实践' },
           { docId: 'agent-engineering/tool-development', title: 'Agent 工具开发指南', description: 'Agent 工具开发完整指南' },
@@ -52,7 +67,7 @@ const groups = [
           { docId: 'ai-native-pipeline/evaluation', title: 'Agent 效果评估实战', description: '如何量化验证 Agent 改进效果' },
           { docId: 'agent-architecture-level/security-defense', title: 'Agent 安全威胁与防御策略', description: 'jojo-code 安全模块源码级剖析' },
           { docId: 'agent-architecture-level/model-degradation', title: 'Agent 多模型降级策略', description: '多模型架构与降级算法实战' },
-          { docId: 'agent-architecture-level/typescript-python-architecture-practice', title: 'TypeScript + Python 双语言架构实践', description: '跨语言架构设计与实现' },
+          { docId: 'agent-architecture-level/typescript-python-architecture', title: 'TypeScript + Python 双语言架构实践', description: '跨语言架构设计与实现' },
           { docId: 'agent-framework/framework-comparison', title: '主流 Agent 框架对比评测', description: 'LangGraph、LangChain、AutoGen、CrewAI 深度评测' },
         ],
       },

@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from 'react';
-import { useColorMode } from '@docusaurus/theme-common';
+import React, { useEffect, useRef, useState } from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import styles from './styles.module.css';
 
@@ -14,7 +13,23 @@ const SKILL_DIMENSIONS = [
 
 function SkillRadarChart() {
   const chartRef = useRef(null);
-  const { colorMode } = useColorMode();
+  const [colorMode, setColorMode] = useState('light');
+
+  useEffect(() => {
+    setColorMode(
+      document.documentElement.getAttribute('data-theme') || 'light'
+    );
+    const observer = new MutationObserver(() => {
+      setColorMode(
+        document.documentElement.getAttribute('data-theme') || 'light'
+      );
+    });
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme'],
+    });
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     let chart = null;

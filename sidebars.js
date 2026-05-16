@@ -5,15 +5,16 @@ const sidebars = {
   aiSidebar: [
     {
       type: 'category',
-      label: '🚀 AI Native Pipeline 系列',
+      label: '🌱 AI Agent 入门',
       link: {
         type: 'generated-index',
-        description: '从需求到代码的全自动开发流水线',
+        description: '从零开始认识 AI Agent：基本概念、LLM 基础、环境搭建和你的第一个 Agent',
       },
       items: [
-        'ai-native-pipeline/AI-Native-Pipeline-设计实践',
-        'ai-native-pipeline/AI-Native-Pipeline-踩坑实录',
-        'ai-native-pipeline/Agent-效果评估实战',
+        'getting-started/what-is-ai-agent',
+        'getting-started/llm-basics',
+        'getting-started/dev-environment-setup',
+        'getting-started/your-first-agent',
       ],
     },
     {
@@ -77,28 +78,6 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '🎯 实战项目',
-      link: {
-        type: 'generated-index',
-        description: 'Agent 实战项目开发',
-      },
-      items: [
-        'agent-projects/Agent-实战项目开发',
-      ],
-    },
-    {
-      type: 'category',
-      label: '🚢 运维部署',
-      link: {
-        type: 'generated-index',
-        description: 'Agent 部署与运维',
-      },
-      items: [
-        'agent-ops/Agent-部署上线指南',
-      ],
-    },
-    {
-      type: 'category',
       label: '📊 框架对比',
       link: {
         type: 'generated-index',
@@ -139,17 +118,15 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '🚀 AI 项目实战沉淀',
+      label: '🚀 AI Native Pipeline 系列',
       link: {
         type: 'generated-index',
-        description: 'GitHub AI 项目的架构解析与实战经验',
+        description: '从需求到代码的全自动开发流水线',
       },
       items: [
-        'ai-projects/jojo-code-Coding-Agent实战',
-        'ai-projects/agent-sse-flow流式可视化',
-        'ai-projects/Agent-Skills体系设计',
-        'ai-projects/xmind2md-MCP工具开发',
-        'ai-projects/AI编码工具全景对比',
+        'ai-native-pipeline/AI-Native-Pipeline-设计实践',
+        'ai-native-pipeline/AI-Native-Pipeline-踩坑实录',
+        'ai-native-pipeline/Agent-效果评估实战',
       ],
     },
     {
@@ -212,6 +189,43 @@ const sidebars = {
         'cloud-native/CICD流水线设计',
         'cloud-native/监控告警体系',
         'cloud-native/生产环境最佳实践',
+      ],
+    },
+    {
+      type: 'category',
+      label: '🚢 运维部署',
+      link: {
+        type: 'generated-index',
+        description: 'Agent 部署与运维',
+      },
+      items: [
+        'agent-ops/Agent-部署上线指南',
+      ],
+    },
+    {
+      type: 'category',
+      label: '🎯 实战项目',
+      link: {
+        type: 'generated-index',
+        description: 'Agent 实战项目开发',
+      },
+      items: [
+        'agent-projects/Agent-实战项目开发',
+      ],
+    },
+    {
+      type: 'category',
+      label: '🚀 AI 项目实战沉淀',
+      link: {
+        type: 'generated-index',
+        description: 'GitHub AI 项目的架构解析与实战经验',
+      },
+      items: [
+        'ai-projects/jojo-code-Coding-Agent实战',
+        'ai-projects/agent-sse-flow流式可视化',
+        'ai-projects/Agent-Skills体系设计',
+        'ai-projects/xmind2md-MCP工具开发',
+        'ai-projects/AI编码工具全景对比',
       ],
     },
     {

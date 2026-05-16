@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: typescript-python-architecture
 title: TypeScript + Python，跨语言架构实践
 ---
 
