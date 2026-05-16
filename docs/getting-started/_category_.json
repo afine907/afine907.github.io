@@ -1,0 +1,8 @@
+{
+  "label": "🌱 AI Agent 入门",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "从零开始认识 AI Agent：基本概念、LLM 基础、环境搭建和你的第一个 Agent"
+  }
+}

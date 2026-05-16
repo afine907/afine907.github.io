@@ -80,7 +80,7 @@ function HomepageHeader() {
           </div>
           <div className={styles.heroStats}>
             <AnimatedStat target={totalArticles} suffix="+" label="篇文章" />
-            <AnimatedStat target={14} suffix="" label="个分类" />
+            <AnimatedStat target={17} suffix="" label="个分类" />
             <AnimatedStat target={100} suffix="%" label="AI Agent" />
           </div>
         </div>

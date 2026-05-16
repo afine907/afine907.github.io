@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: context-window-management
 title: 你的 Agent 为什么总说"我忘了"？深入剖析 LLM 上下文窗口
 ---
 
