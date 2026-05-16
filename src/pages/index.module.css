@@ -69,6 +69,24 @@
   background: var(--ifm-background-surface-color);
 }
 
+/* About Section */
+.aboutSection {
+  padding: 0 0 2rem;
+}
+
+.aboutContent {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.aboutContent p {
+  margin: 0 0 0.5rem;
+}
+
 .sectionTitle {
   font-size: 2rem;
   text-align: center;

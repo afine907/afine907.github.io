@@ -184,13 +184,19 @@ const sidebars = {
       label: '🐍 Python 后端实践',
       link: {
         type: 'generated-index',
-        description: 'FastAPI 服务、异步编程、数据库设计与代码质量',
+        description: 'FastAPI 服务、异步编程、数据库设计、认证授权、可观测性与生产部署',
       },
       items: [
         'backend-python/FastAPI-LangChain实战',
         'backend-python/异步编程与并发模型',
         'backend-python/数据库设计与ORM',
         'backend-python/Python类型系统与代码质量',
+        'backend-python/认证与授权实战',
+        'backend-python/LLM-API速率限制与节流',
+        'backend-python/日志与可观测性',
+        'backend-python/消息队列与事件驱动架构',
+        'backend-python/缓存策略与性能优化',
+        'backend-python/WebSocket双工通信实战',
       ],
     },
     {

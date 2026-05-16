@@ -87,12 +87,18 @@ const groups = [
     categories: [
       {
         label: 'Python 后端实践',
-        description: 'FastAPI 服务、数据库设计、Agent API',
+        description: 'FastAPI 服务、认证授权、可观测性与生产部署',
         items: [
           { docId: 'backend-python/fastapi-langchain-practice', title: 'FastAPI + LangChain 实战', description: 'Agent API 服务搭建与流式响应实现' },
           { docId: 'backend-python/async-programming-concurrency', title: '异步编程与并发模型', description: 'asyncio / TaskGroup 与 Agent 并发编排' },
           { docId: 'backend-python/database-design-orm', title: '数据库设计与 ORM', description: 'SQLAlchemy 2.0 与 Agent 状态持久化' },
           { docId: 'backend-python/python-type-system-quality', title: 'Python 类型系统与代码质量', description: 'Pydantic / mypy / ruff 工具链实战' },
+          { docId: 'backend-python/backend-auth-authorization', title: '认证与授权实战', description: 'JWT / OAuth 2.0 / API Key 选型与 FastAPI 实现' },
+          { docId: 'backend-python/rate-limiting-throttling', title: 'LLM API 速率限制与节流', description: 'Token Bucket 算法与 FastAPI 中间件限流' },
+          { docId: 'backend-python/logging-observability', title: '日志与可观测性', description: 'OpenTelemetry / 结构化日志 / Jaeger 分布式追踪' },
+          { docId: 'backend-python/message-queue-event-driven', title: '消息队列与事件驱动', description: 'Celery / Redis Queue 异步任务编排' },
+          { docId: 'backend-python/caching-strategies', title: '缓存策略与性能优化', description: 'Redis 多级缓存与 LLM 语义缓存' },
+          { docId: 'backend-python/websocket-duplex-communication', title: 'WebSocket 双工通信实战', description: 'WebSocket vs SSE 选型与 FastAPI 实现' },
         ],
       },
     ],
@@ -145,7 +151,7 @@ export default function ArticleList() {
   return (
     <div className={styles.container}>
       {groups.map((group, groupIdx) => (
-        <div key={groupIdx} className={styles.groupSection}>
+        <div key={groupIdx} id={`group-${groupIdx}`} className={styles.groupSection}>
           <h2 className={styles.groupTitle}>{group.label}</h2>
           {group.categories.map((category, catIdx) => (
             <section key={catIdx} className={styles.categorySection}>
