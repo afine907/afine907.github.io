@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import ArticleList, { groups } from '@site/src/components/ArticleList';
+import { groups } from '@site/src/components/ArticleList';
 import SkillRadar from '@site/src/components/SkillRadar';
 import TechTags from '@site/src/components/TechTags';
 import QuickNav from '@site/src/components/QuickNav';
@@ -160,12 +160,6 @@ export default function Home() {
         <TechTags />
         <FeaturedArticles />
         <QuickNav />
-        <section className={styles.allArticlesSection}>
-          <div className="container">
-            <h2 className={styles.sectionTitle}>📚 全部文章</h2>
-          </div>
-          <ArticleList />
-        </section>
       </main>
     </Layout>
   );

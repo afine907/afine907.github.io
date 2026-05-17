@@ -1,49 +1,360 @@
 .section {
-  padding: 1rem 0 2rem;
+  padding: 5rem 0 4rem;
+  position: relative;
 }
 
 .title {
+  font-size: 2rem;
   text-align: center;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--ifm-color-emphasis-500);
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  margin: 0 0 0.35rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.75rem;
-  max-width: 700px;
-  margin: 0 auto;
+.subtitle {
+  text-align: center;
+  color: var(--ifm-color-emphasis-500);
+  margin: 0 0 3.5rem;
+  font-size: 1.05rem;
 }
+
+/* Outer container centers everything */
+.cardList {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Each row holds 1 or 2 cards */
+.row {
+  display: flex;
+  gap: 1.25rem;
+  width: 100%;
+  justify-content: center;
+}
+
+/* --- Per-group color palettes --- */
+
+.colorGreen {
+  --card-accent: #2e7d32;
+  --card-accent-light: #e8f5e9;
+  --card-accent-glow: rgba(46, 125, 50, 0.15);
+  --emoji-bg-1: #43a047;
+  --emoji-bg-2: #2e7d32;
+}
+[data-theme='dark'] .colorGreen {
+  --card-accent: #66bb6a;
+  --card-accent-light: rgba(46, 125, 50, 0.12);
+  --card-accent-glow: rgba(102, 187, 106, 0.2);
+  --emoji-bg-1: #388e3c;
+  --emoji-bg-2: #1b5e20;
+}
+
+.colorBlue {
+  --card-accent: #1565c0;
+  --card-accent-light: #e3f2fd;
+  --card-accent-glow: rgba(21, 101, 192, 0.15);
+  --emoji-bg-1: #1e88e5;
+  --emoji-bg-2: #1565c0;
+}
+[data-theme='dark'] .colorBlue {
+  --card-accent: #42a5f5;
+  --card-accent-light: rgba(21, 101, 192, 0.12);
+  --card-accent-glow: rgba(66, 165, 245, 0.2);
+  --emoji-bg-1: #1976d2;
+  --emoji-bg-2: #0d47a1;
+}
+
+.colorPink {
+  --card-accent: #c62828;
+  --card-accent-light: #fce4ec;
+  --card-accent-glow: rgba(198, 40, 40, 0.15);
+  --emoji-bg-1: #e53935;
+  --emoji-bg-2: #c62828;
+}
+[data-theme='dark'] .colorPink {
+  --card-accent: #ef5350;
+  --card-accent-light: rgba(198, 40, 40, 0.12);
+  --card-accent-glow: rgba(239, 83, 80, 0.2);
+  --emoji-bg-1: #d32f2f;
+  --emoji-bg-2: #b71c1c;
+}
+
+.colorOrange {
+  --card-accent: #e65100;
+  --card-accent-light: #fff3e0;
+  --card-accent-glow: rgba(230, 81, 0, 0.15);
+  --emoji-bg-1: #fb8c00;
+  --emoji-bg-2: #e65100;
+}
+[data-theme='dark'] .colorOrange {
+  --card-accent: #ffa726;
+  --card-accent-light: rgba(230, 81, 0, 0.12);
+  --card-accent-glow: rgba(255, 167, 38, 0.2);
+  --emoji-bg-1: #ef6c00;
+  --emoji-bg-2: #bf360c;
+}
+
+.colorCyan {
+  --card-accent: #00838f;
+  --card-accent-light: #e0f7fa;
+  --card-accent-glow: rgba(0, 131, 143, 0.15);
+  --emoji-bg-1: #00acc1;
+  --emoji-bg-2: #00838f;
+}
+[data-theme='dark'] .colorCyan {
+  --card-accent: #26c6da;
+  --card-accent-light: rgba(0, 131, 143, 0.12);
+  --card-accent-glow: rgba(38, 198, 218, 0.2);
+  --emoji-bg-1: #0097a7;
+  --emoji-bg-2: #006064;
+}
+
+.colorPurple {
+  --card-accent: #6a1b9a;
+  --card-accent-light: #f3e5f5;
+  --card-accent-glow: rgba(106, 27, 154, 0.15);
+  --emoji-bg-1: #8e24aa;
+  --emoji-bg-2: #6a1b9a;
+}
+[data-theme='dark'] .colorPurple {
+  --card-accent: #ab47bc;
+  --card-accent-light: rgba(106, 27, 154, 0.12);
+  --card-accent-glow: rgba(171, 71, 188, 0.2);
+  --emoji-bg-1: #7b1fa2;
+  --emoji-bg-2: #4a148c;
+}
+
+/* --- Card base --- */
 
 .card {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.45rem 1rem;
-  border-radius: 8px;
+  gap: 0.875rem;
+  padding: 1.1rem 1.25rem;
+  border-radius: 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   background: var(--ifm-background-surface-color);
   border: 1px solid var(--ifm-color-emphasis-200);
-  color: var(--ifm-color-emphasis-700);
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  min-width: 0;
+}
+
+/* Border-accent on the left */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--card-accent);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  border-radius: 16px 0 0 16px;
+}
+
+.card::after {
+  content: '›';
+  font-size: 1.5rem;
+  color: var(--card-accent);
+  font-weight: 300;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: relative;
+  z-index: 1;
+  opacity: 0.5;
 }
 
 .card:hover {
   text-decoration: none;
-  border-color: var(--ifm-color-primary);
-  color: var(--ifm-color-primary);
-  transform: translateY(-1px);
+  border-color: var(--card-accent);
+  background: var(--card-accent-light);
+  box-shadow:
+    0 8px 28px var(--card-accent-glow),
+    0 2px 8px rgba(0,0,0,0.06);
+  transform: translateY(-4px) scale(1.01);
 }
 
-.arrow {
-  font-size: 0.85rem;
-  opacity: 0.6;
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover::after {
+  transform: translateX(6px);
+  opacity: 1;
+}
+
+[data-theme='dark'] .card {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-color: rgba(255,255,255,0.08);
+  box-shadow: none;
+}
+
+[data-theme='dark'] .card:hover {
+  background: var(--card-accent-light);
+  border-color: var(--card-accent);
+  box-shadow:
+    0 8px 28px var(--card-accent-glow),
+    0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* --- Emoji box with gradient --- */
+
+.emojiBox {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--emoji-bg-1), var(--emoji-bg-2));
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover .emojiBox {
+  transform: scale(1.1) rotate(-4deg);
+  box-shadow: 0 4px 16px var(--card-accent-glow);
+}
+
+[data-theme='dark'] .emojiBox {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.cardBody {
+  flex: 1;
+  min-width: 0;
+}
+
+.cardTitle {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.15rem;
+}
+
+.cardDesc {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-500);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.count {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--card-accent);
+  background: var(--card-accent-light);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  flex-shrink: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card:hover .count {
+  background: var(--card-accent);
+  color: #fff;
+}
+
+[data-theme='dark'] .count {
+  background: rgba(255,255,255,0.06);
+  color: var(--ifm-color-emphasis-400);
+}
+
+/* --- Divider between groups — golden line --- */
+
+.divider {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0 1rem;
+}
+
+.divider span {
+  position: relative;
+  padding: 0 1.25rem;
+  color: var(--ifm-color-emphasis-400);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
+
+.divider::before {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #d4a017,
+    #f0d060
+  );
+}
+
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    #f0d060,
+    #d4a017,
+    transparent
+  );
+}
+
+[data-theme='dark'] .divider::before {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #b8860b,
+    #d4a017
+  );
+}
+
+[data-theme='dark'] .divider::after {
+  background: linear-gradient(
+    90deg,
+    #d4a017,
+    #b8860b,
+    transparent
+  );
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .section {
+    padding: 3rem 0 2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .divider {
+    width: 90%;
+  }
 }
