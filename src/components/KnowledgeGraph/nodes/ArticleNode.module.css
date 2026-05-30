@@ -1,0 +1,27 @@
+.node {
+  background: white;
+  border: 2px solid #1890ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.node:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  display: block;
+}

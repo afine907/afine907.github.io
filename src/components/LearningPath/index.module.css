@@ -1,0 +1,85 @@
+.pathCard {
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.pathHeader {
+  margin-bottom: 20px;
+}
+
+.pathBadge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 16px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.pathDesc {
+  font-size: 15px;
+  color: var(--ifm-font-color-secondary);
+  margin: 8px 0 0;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stepRow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.stepNumber {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+  flex-shrink: 0;
+}
+
+.stepLink {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.stepLink:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.stepTitle {
+  font-weight: 500;
+  color: var(--ifm-font-color-base);
+  font-size: 14px;
+}
+
+.stepDesc {
+  font-size: 12px;
+  color: var(--ifm-font-color-secondary);
+  margin-top: 2px;
+}
+
+.stepArrow {
+  font-size: 16px;
+  margin: 4px 0 4px 8px;
+}
