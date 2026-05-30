@@ -278,7 +278,7 @@ def decompose_requirement(requirement: str) -> list[Task]:
 - 任务 3：前端页面（前端 Agent）
 - 任务 4：测试用例（测试 Agent）
 
-## 我踩过的五个坑
+## 实践中的典型问题
 
 ### 坑一：状态污染
 

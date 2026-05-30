@@ -176,7 +176,7 @@ print(f"P95: {metrics.p95_response_time}s")
 print(f"工具耗时: {metrics.tool_timings}")
 ```
 
-## 我踩过的坑
+## 常见问题与排查
 
 **坑一：只看平均值**
 

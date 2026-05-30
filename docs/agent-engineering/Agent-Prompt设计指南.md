@@ -367,7 +367,7 @@ def build_system_prompt(mode: str, user_level: str) -> str:
 | 必要的工作流程 | 重复的规则 |
 | 关键示例 | 不常用的边缘情况 |
 
-## ⚠️ 我踩过的真实坑
+## ⚠️ 常见问题与排查
 
 ### 坑一：Prompt 太长
 

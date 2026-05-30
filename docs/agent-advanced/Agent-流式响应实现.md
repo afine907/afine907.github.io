@@ -122,7 +122,7 @@ for await (const chunk of streamChat('你好')) {
 2. 客户端用 `for await` 消费
 3. 最后发一个 `done` 信号表示结束
 
-## 我踩过的坑
+## 常见问题与排查
 
 **坑一：忘了 flush**
 

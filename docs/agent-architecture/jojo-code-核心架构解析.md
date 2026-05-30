@@ -176,7 +176,7 @@ class ConversationMemory:
 **改 UI**：`packages/cli/src/components/` 下修改
 **加新模式**：`src/jojo_code/agent/modes.py`
 
-## 我踩过的坑
+## 常见问题与排查
 
 **坑一：stdin/stdout 编码**
 

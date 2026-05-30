@@ -667,7 +667,7 @@ class ProductionSelfImprovingAgent:
 
 ## 八、效果评估
 
-我做了一个测试：让 Agent 执行 100 次文件操作任务，看自我进化的效果。
+通过测试验证自我进化的效果：让 Agent 执行 100 次文件操作任务。
 
 ### 8.1 测试场景
 

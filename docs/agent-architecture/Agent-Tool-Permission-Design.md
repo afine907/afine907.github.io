@@ -148,7 +148,7 @@ result = registry.execute("execute_command", {"cmd": "ls"}, UserRole.ADMIN)
 # 输出: 文件列表...
 ```
 
-## 我踩过的坑
+## 常见问题与排查
 
 **坑一：权限检查遗漏**
 
@@ -158,7 +158,7 @@ result = registry.execute("execute_command", {"cmd": "ls"}, UserRole.ADMIN)
 
 **坑二：权限粒度太粗**
 
-一开始只有"能用"和"不能用"两种，后来发现不够用。
+早期实现只有"能用"和"不能用"两种权限级别，后来发现不够用。
 
 解决：细分权限：读、写、执行、管理员。
 

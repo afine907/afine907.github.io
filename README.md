@@ -104,4 +104,4 @@ afine907-wiki/
 
 ## 📄 License
 
-MIT © 2024-2026 jojo
+MIT © 2026 jojo

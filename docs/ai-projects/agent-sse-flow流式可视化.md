@@ -6,7 +6,7 @@ slug: agent-sse-flow
 
 # agent-sse-flow Agent 流式可视化
 
-> Agent 在"思考"的时候，用户看到的只是一个 loading 动画——不知道它在干什么、用了哪些工具、花了多少 Token。这种黑盒体验让用户很焦虑。于是我做了一个 React 组件，能把 Agent 的 SSE 流实时可视化：思考过程、工具调用、Token 消耗，一目了然。
+> Agent 在"思考"的时候，用户看到的只是一个 loading 动画——不知道它在干什么、用了哪些工具、花了多少 Token。这种黑盒体验让用户很焦虑。一个有效的解决方案是构建一个轻量级 React 组件，把 Agent 的 SSE 流实时可视化：思考过程、工具调用、Token 消耗，一目了然。
 
 ## 一、项目定位
 
