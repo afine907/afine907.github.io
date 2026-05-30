@@ -107,6 +107,36 @@ function AboutText() {
   );
 }
 
+function RoadmapBanner() {
+  return (
+    <section className={styles.roadmapBanner}>
+      <div className="container">
+        <div className={styles.roadmapContent}>
+          <div className={styles.roadmapText}>
+            <h2 className={styles.roadmapTitle}>🗺️ 学习路线图</h2>
+            <p className={styles.roadmapDesc}>
+              不知道从哪里开始？我们为你规划了一条<strong>从入门到实战</strong>的完整学习路径，配有交互式知识图谱，帮你看清文章之间的关联。
+            </p>
+            <Link to="/roadmap" className={styles.roadmapButton}>
+              查看学习路线 →
+            </Link>
+          </div>
+          <div className={styles.roadmapVisual}>
+            <div className={styles.pathPreview}>
+              <span className={styles.pathDot} style={{ background: '#52c41a' }} />
+              <span className={styles.pathDot} style={{ background: '#1890ff' }} />
+              <span className={styles.pathDot} style={{ background: '#722ed1' }} />
+              <span className={styles.pathDot} style={{ background: '#fa8c16' }} />
+              <span className={styles.pathDot} style={{ background: '#f5222d' }} />
+            </div>
+            <span className={styles.pathLabel}>入门 → 核心 → LLM → 后端 → 实战</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function FeaturedArticles() {
   const featured = [
     {
@@ -159,6 +189,7 @@ export default function Home() {
         <AboutText />
         <TechTags />
         <FeaturedArticles />
+        <RoadmapBanner />
         <QuickNav />
       </main>
     </Layout>
