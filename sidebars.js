@@ -4,6 +4,11 @@
 const sidebars = {
   aiSidebar: [
     {
+      type: 'doc',
+      id: 'roadmap',
+      label: '🗺️ 学习路线图',
+    },
+    {
       type: 'category',
       label: '🌱 AI Agent 入门',
       link: {

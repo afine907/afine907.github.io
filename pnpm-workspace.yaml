@@ -1,0 +1,4 @@
+allowBuilds:
+  '@swc/core': true
+  core-js: true
+storeDir: D:/.pnpm-store/v10

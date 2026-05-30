@@ -146,6 +146,88 @@
   padding: 4rem 0;
 }
 
+/* Roadmap Banner */
+.roadmapBanner {
+  padding: 3rem 0;
+  background: linear-gradient(135deg, #f0f5ff 0%, #e6f7ff 100%);
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] .roadmapBanner {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.roadmapContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.roadmapText {
+  flex: 1;
+}
+
+.roadmapTitle {
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem;
+  color: var(--ifm-color-primary);
+}
+
+.roadmapDesc {
+  font-size: 1rem;
+  color: var(--ifm-font-color-secondary);
+  margin: 0 0 1.25rem;
+  line-height: 1.6;
+}
+
+.roadmapButton {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background: var(--ifm-color-primary);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.roadmapButton:hover {
+  background: var(--ifm-color-primary-dark);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.roadmapVisual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pathPreview {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pathDot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.pathLabel {
+  font-size: 0.85rem;
+  color: var(--ifm-font-color-secondary);
+  white-space: nowrap;
+}
+
 /* Responsive */
 @media screen and (max-width: 768px) {
   .heroBanner {
