@@ -206,11 +206,11 @@ class ChatResponse:
     tool_calls: list = None
 ```
 
-## 我踩过的坑
+## 常见问题与排查
 
 **坑一：缓冲问题**
 
-一开始没加 `flush=True`，TypeScript 收不到响应。Python 默认会缓冲输出，只有缓冲区满了或程序结束才会输出。
+一个常见的陷阱是忘了加 `flush=True`，导致 TypeScript 收不到响应。Python 默认会缓冲输出，只有缓冲区满了或程序结束才会输出。
 
 **坑二：进程管理**
 

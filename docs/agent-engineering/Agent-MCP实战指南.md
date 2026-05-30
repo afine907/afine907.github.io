@@ -174,7 +174,7 @@ async def get_prompt(name: str, arguments: dict):
 
 ## 完整的 MCP Server 示例
 
-我写了一个真实的 MCP Server：项目助手，能读取项目文件、分析代码、生成文档。
+以下是一个完整的 MCP Server 示例：项目助手，能读取项目文件、分析代码、生成文档。
 
 ```python
 # project_assistant_server.py

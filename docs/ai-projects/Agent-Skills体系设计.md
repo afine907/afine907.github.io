@@ -6,7 +6,7 @@ slug: agent-skills-system
 
 # Agent Skills 体系与 Prompt 模板库
 
-> 每次开发新的 Agent 功能，都要从零写 Prompt——翻译、代码审查、文档生成，每次都重复造轮子。于是我做了一个 Skills 仓库，把常用的 Agent 能力封装成可复用的 Prompt 模板，像乐高积木一样组合使用。
+> 在 Agent 开发中，一个常见的问题是：每次开发新功能，都要从零写 Prompt——翻译、代码审查、文档生成，每次都重复造轮子。一种有效的工程化方案是建立一个 Skills 仓库，把常用的 Agent 能力封装成可复用的 Prompt 模板，像乐高积木一样组合使用。
 
 ## 一、什么是 Agent Skills
 

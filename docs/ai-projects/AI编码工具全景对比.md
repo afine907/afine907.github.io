@@ -6,7 +6,7 @@ slug: ai-coding-tools-comparison
 
 # AI 编码工具全景对比
 
-> 从 Cursor 到 Claude Code，从 GitHub Copilot 到 Aider，AI 编码工具在 2025 年迎来了全面爆发。作为一个从传统前端开发转向 AI Agent 方向的开发者，我花了大半年时间逐个试用这些工具，踩了不少坑，也积累了一些真实体会。这篇文章把市面上主流的 AI 编码工具拉通对比一次，帮你少走弯路。
+> 从 Cursor 到 Claude Code，从 GitHub Copilot 到 Aider，AI 编码工具在 2025 年迎来了全面爆发。经过对市面主流工具的系统性测试和实际项目验证，这篇文章把主流 AI 编码工具拉通对比一次，帮你少走弯路。
 
 ## 一、为什么需要了解 AI 编码工具
 
@@ -14,7 +14,7 @@ slug: ai-coding-tools-comparison
 
 对于一个有 5 年以上经验的前端开发者来说，这些工具不是来取代你的，而是让你的产出翻倍。关键在于选对工具、用对场景。选错了，花了一堆钱还没什么效果；用对了，效率提升是实实在在的。
 
-我个人的使用经历是这样的：最早用 GitHub Copilot，感觉「也就那样」；后来切到 Cursor，才真正体会到 AI 辅助编码的威力；再后来开始用 Claude Code 做 Agent 开发，发现终端里的 Agentic Coding 完全是另一个维度的体验。不同的工具适合不同的场景，没有银弹，但有最佳实践。
+一个典型的演进路径是：最早用 GitHub Copilot，体验中规中矩；切到 Cursor 后，才真正体会到 AI 辅助编码的威力；再后来用 Claude Code 做 Agent 开发，发现终端里的 Agentic Coding 完全是另一个维度的体验。不同的工具适合不同的场景，没有银弹，但有最佳实践。
 
 ## 二、工具分类与定位
 

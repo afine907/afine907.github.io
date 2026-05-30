@@ -227,7 +227,7 @@ def build_behavior_windows(cleaned_stream):
 
 ### 规则定义 DSL
 
-我们用 YAML 定义规则, 运行时通过 ZooKeeper 监听规则变更, 实现热加载:
+实践中常用 YAML 定义规则, 运行时通过 ZooKeeper 监听规则变更, 实现热加载:
 
 ```yaml
 # rules/high_frequency_transfer.yaml
@@ -769,7 +769,7 @@ class RealTimeScoringFunction(KeyedProcessFunction):
 
 ## 工作流编排
 
-触发告警之后, 需要一套完整的工作流来驱动后续的人工审核和处置。我们用状态机来管理这个流程:
+触发告警之后, 需要一套完整的工作流来驱动后续的人工审核和处置。实践中常用状态机来管理这个流程:
 
 ```python
 from enum import Enum

@@ -467,7 +467,7 @@ app.add_middleware(
 
 ### 自定义限流中间件
 
-LLM API 调用是按 token 计费的，不限流分分钟破产。我们用内存计数器实现一个简单的限流：
+LLM API 调用是按 token 计费的，不限流分分钟破产。可以用内存计数器实现一个简单的限流：
 
 ```python
 import time
